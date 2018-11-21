@@ -1,9 +1,10 @@
 import {Component, Input, OnInit, ViewEncapsulation} from '@angular/core';
-import {Course} from "../model/course";
-import {MatDialog, MatDialogConfig} from "@angular/material";
-import {CourseDialogComponent} from "../course-dialog/course-dialog.component";
+import {Course} from '../model/course';
+import {MatDialog, MatDialogConfig} from '@angular/material';
+import {CourseDialogComponent} from '../course-dialog/course-dialog.component';
 
 @Component({
+    // tslint:disable-next-line:component-selector
     selector: 'courses-card-list',
     templateUrl: './courses-card-list.component.html',
     styleUrls: ['./courses-card-list.component.css']
@@ -36,7 +37,7 @@ export class CoursesCardListComponent implements OnInit {
 
 
         dialogRef.afterClosed().subscribe(
-            val => console.log("Dialog output:", val)
+            val => console.log('Dialog output:', val)
         );
 
     }

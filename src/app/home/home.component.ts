@@ -1,10 +1,11 @@
 import {Component, OnInit} from '@angular/core';
-import {Course} from "../model/course";
-import {Observable} from "rxjs/Observable";
-import {CoursesService} from "../services/courses.service";
+import {Course} from '../model/course';
+import {Observable} from 'rxjs/Observable';
+import {CoursesService} from '../services/courses.service';
 import {map, tap} from 'rxjs/operators';
 
 @Component({
+    // tslint:disable-next-line:component-selector
     selector: 'home',
     templateUrl: './home.component.html',
     styleUrls: ['./home.component.css']
